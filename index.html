@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Css.css">
+    <script src="JSF.js"></script>
+    <title>Animal World</title>
+</head>
+
+<body>
+    <h1 class="Head1">Pets World(Data Analysis)</h1>
+    
+    <div class="d0">Welcome! Could you imagine the amount of information that you may extract from just knowing about other people's pets?
+       <br><br> Well, I could'nt. Untill I tried to visualize everything. 
+       <br><br> So let's take a look at the various aspects that we could find looking at other people's pets.
+    </div>
+    <h1 class="Head3">Some questions we can answer using data related Pets in USA.</h1>
+    <br>
+    <h1 class="Head2">Q1. Which state am I able to find most dog breeding centers?</h1>
+    <h1 class="Head2">Q2. How many bags of Pet's Food do I need to keep at my store?</h1>
+    <h1 class="Head2">Q3. What shall I keep more? Dog's food or Cat's food?</h1>
+    <h1 class="Head2">Q4. Which State shall I reside in being a "not so dog's person"?</h1>
+    <h1 class="Head2">Statement: There are studies showing common traits in the personalities of people according to the pets thay have. 
+        Hence we might even tell about the personality of residents of a particular state.</h1>
+
+
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+
+<!--FIRST-->
+    <img src="Dog.jpg" class="imgg" alt="Dog" width="1200" height="400">
+    <div id="viz1"></div>
+        <div id="D01">
+            Dogs in States.<br><br>The above data represents the relation between total number of households within the state and number of dog owning households.
+            The vertical height of the bars is directly proportional to the amount of the measure. Higher bars meaning higher quantity.
+        </div>
+        <div id="D02">Questions I can ask myself before starting a business in my state related to:
+            <ol>
+                <li>Dog food and accessories.</li><br>
+                <li>Dog's day care center.</li><br>
+                <li>Supply of Dog's medicines.</li><br>
+                <li>Dog's breeding center.</li><br>
+                <li>As dog owners are mostly extroverts so I want to settle in such states or not?</li>
+            </ol>
+        </div>
+        <div id="D02">Conclusions I can derive:
+            <ol>
+                <li>In states like California and New York 1/3rd of total households have dogs. Meaning every 1 out of 3 houses have a dog. Thus states with higher population of dog owners like California and New York are good for selling large amount of products.</li><br>
+                <li>Whereas in Mississippi and Idaho 1/2 of the total households have dogs. Meaning every second house has a dog, but being less populated, they will not serve well for large businesses.</li><br>
+                <li>Many dogs within state means many dog parks.</li><br>
+                <li>Many dogs within state means many dog breeding centers to buy a dog from.</li>
+            </ol>
+        </div>
+    <br><br>
+
+<!--SECOND-->
+    <img src="Cat.jpg" class="imgg" alt="cat" width="1000" height="300" >
+    <div id="viz2"></div>
+        <div id="D01">
+            Cats in States.<br><br>The above data represents the relation between total number of households within the states and number of cat owning households.
+            The vertical height of the bars is directly proportional to the amount of the measure. Higher bars meaning higher quantity.
+        </div>
+        <div id="D02">Questions I can ask myself before starting a business in a state related to:
+            <ol>
+                <li>Cat's food and accessories.</li><br>
+                <li>Supply of Cat's medicines.</li><br>
+                <li>Cat's breeding center.</li><br>
+                <li>As cat owners are mostly introverts, so do I want to settle in such states or not?</li>
+            </ol>
+        </div>
+        <div id="D02">Conclusions I can derive:
+            <ol>
+                <li>In states like California, New York and Texas 1/4th of total households have cats. Meaning every 1 out of 4 houses have a cat. However, since these states have a higher population so they can become the hotspots for my business.</li>
+                <br>
+                <li>Whereas in Washington and Florida 1/3rd of the total households have cats. Meaning every 1 out of 3 houses has a cat. However, since they are less populated, they might not serve well to start a big business.</li>
+                <br>
+                <li>Thus according to the size of my business I might see which state might serve me well. I would choose a state with larger number of cat owners and also a larger population as well.</li>
+                <br>
+                <li>Many cats within state means many cat breeding centers to buy cats from.</li>
+            </ol>
+        </div>
+    <br><br>
+
+<!--Third-->
+    <div id="viz3"></div>
+    <div id="D01">Dogs vs Cats within States.<br><br>The above data represents the relation between mean number of cats and mean number of dogs within each state.
+        The height of bar is directly proportional to mean of number cats and dogs within the state.
+    </div>
+    <div id="D02">Questions we can ask from above data.
+        <ol>
+            <li>Which pet food I want to keep a higher stock of?.</li><br>
+            <li>Which pet accessory has a higher probabily to get sold out?</li><br>
+            <li>Which veterinary store is more likely to work more?</li><br>
+            <li>What is the personality of most of the people within the state?</li><br>
+        </ol>
+    </div>
+    <div id="D02">Conclusions I can derive:
+        <ol>
+            <li>I need a higher stock of cat food than dog food in many states.</li><br>
+            <li>Cat accessories are to be sold out more than dog accessories.</li><br>
+            <li>Arizona and Kentucky should have almost same amount of supply.</li>
+        </ol>
+    </div>
+    <br><br>
+
+<!--NEW-->
+    <div class="d2">
+        <h1 class="Head3">Lets look at some food and accessories to choose from.</h1>       
+            <img src="D3.jpg" class="imgg">
+            <br><br><br>
+
+<!--now Catalogue-->
+
+        <div class="container">
+            <div id="dimg"><img src="D1.jpg" title="Dog Food" ></div>
+            <div class="d3" >
+                <p>Dog Food DF01.<br><br>Price: $15 each.<br><br>Best before 3 years.<br></p>
+                <input type="number" id="count0" min='0' placeholder="How many you want?">
+                <button id='B01' onclick="KClick(document.getElementById('count0').value, 0)">Calculate</button>
+                <br>Price is:<output type="text" id="price0">
+            </div>
+            <div class="links"><a href="https://puppyfinder.com/dogs-for-adoption-usa">Click to find Dog Adoption Center</a></div>
+        </div>
+        <br><br><br>
+          
+            
+        <div class="container">
+            <div id="dimg"><img src="D2.jpg" title="Dog Accessory"></div>
+            <div class="d3" >
+                <p>Dog Accessory DA02.<br><br>Price: $20 each.<br></p>
+                <input type="number" id="count1" min='0' placeholder="How many you want?">
+                <button id='B01' onclick="KClick(document.getElementById('count1').value, 1)">Calculate</button>
+                <br>Price is:<output type="text" id="price1">
+            </div>
+            <div class="links"><a href="https://www.bringfido.com/resource/veterinarians/region/united_states/">Click to find Dog Veterinary Store</a></div>
+        </div>
+        <br><br><br>
+
+
+        <div class="container">
+            <div id="dimg"><img src="c1.jpg" title="Cat Food"></div>
+            <div class="d3" >
+                <p>Cat Food CF01.<br><br>Price: $25 each.<br><br>Best before 2 years.<br></p>
+                <input type="number" id="count2" min='0' placeholder="How many you want?">
+                <button id='B01' onclick="KClick(document.getElementById('count2').value, 2)">Calculate</button>
+                <br>Price is:<output type="text" id="price2">
+            </div>
+            <div class="links"><a href="https://providenceac.org/adopt/cats/">Click to find Cat Adoption Center</a></div>
+        </div>
+        <br><br><br>
+
+            
+        <div class="container">
+            <div id="dimg"><img src="c2.jpg" title="Cat Accessory"></div>
+            <div class="d3" >
+                <p>Cat Accessory CA02.<br><br>Price: $30 each.<br></p>
+                <input type="number" id="count3" min='0' placeholder="How many you want?">
+                <button id='B01' onclick="KClick(document.getElementById('count3').value, 3)">Calculate</button>
+                <br>Price is:<output type="text" id="price3">
+            </div>
+            <div class="links"> <a href="https://www.bringfido.com/resource/veterinarians/region/united_states/">Click to find Cat Veterinary Store</a></div>
+        </div>
+        <br><br><br>
+    </div>
+
+<div id="D01">
+        Total cost of all items you selected is: <button id='B01' onclick="KFinal()">Total Calculate: </button>$ <output type="text" id="FinalP">
+</div>
+    <footer id="f">Data used: Population and ownership by household of dogs and cats broken down by state via American Veterinary Medical Association.</footer>
+</body>
+</html>
