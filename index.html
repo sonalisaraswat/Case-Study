@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Css.css">
+    <script src="JSF.js"></script>
+    <title>Animal World</title>
+</head>
+
+<body>
+    <h1 class="Head1">Pets World(Data Analysis)</h1>
+    
+    <div class="d0">Welcome! Could you imagine the amount of information that you may extract from just knowing about other people's pets?
+       <br><br> Well, I could'nt. Untill I tried to visualize everything. 
+       <br><br> So let's take a look at the various aspects that we could find looking at other people's pets.
+    </div>
+    <h1 class="Head3">Some questions we can answer using data related Pets in USA.</h1>
+    <br>
+    <h1 class="Head2">Q1. Which state am I able to find most dog breeding centers?</h1>
+    <h1 class="Head2">Q2. How many bags of Pet's Food do I need to keep at my store?</h1>
+    <h1 class="Head2">Q3. What shall I keep more? Dog's food or Cat's food?</h1>
+    <h1 class="Head2">Q4. Which State shall I reside in being a "not so dog's person"?</h1>
+    <h1 class="Head2">Statement: There are studies showing common traits in the personalities of people according to the pets thay have. 
+        Hence we might even tell about the personality of residents of a particular state.</h1>
+
+
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+
+<!--FIRST-->
+    <img src="Dog.jpg" class="imgg" alt="Dog" width="1200" height="400">
+    <div id="viz1"></div>
+        <div id="D01">
+            Dogs in States.<br><br>The above data represents the relation between States and number of dog owners.
+            The size of circles is directly proportional to number of dog owner within the state.
+        </div>
+        <div id="D02">Questions I can ask myself before starting a business in my state related to:
+            <ol>
+                <li>Dog food and accessories.</li>
+                <li>Dog's day care center.</li>
+                <li>Supply of Dog's medicines.</li>
+                <li>Dog's breeding center.</li>
+                <li>As dog owners are mostly extroverts so I want to settle in such states or not?</li>
+            </ol>
+        </div>
+        <div id="D02">Conclusions I can derive:
+            <ol>
+                <li>States like Texas, California, Florida, New York are hot spots to start my business.</li>
+                <li>I would not start my business in states like Utah, Nebraska etc.</li>
+                <li>Many dogs within state means many dog parks.</li>
+                <li>Many dogs within state means many dog breeding centers to buy a dog from.</li>
+            </ol>
+        </div>
+    <br><br>
+
+<!--SECOND-->
+    <img src="Cat.jpg" class="imgg" alt="cat" width="1000" height="300" >
+    <div id="viz2"></div>
+        <div id="D01">Cats in States.<br><br>The above data represents the relation between States and number of cat owners.
+            The size of circles is directly proportional to number of cat owners within the state.
+        </div>
+        <div id="D02">Questions I can ask myself before starting a business in a state related to:
+            <ol>
+                <li>Cat's food and accessories.</li>
+                <li>Supply of Cat's medicines.</li>
+                <li>Cat's breeding center.</li>
+                <li>As cat owners are mostly introverts so I want to settle in such states or not?</li>
+            </ol>
+        </div>
+        <div id="D02">Conclusions I can derive:
+            <ol>
+                <li>States like California, Florida, New York, Ohio are hot spots to start my business.</li>
+                <li>I would not start my business in states like Nevada, West Virginia etc.</li>
+                <li>Many cats within state means many cat breeding centers to buy cats from.</li>
+            </ol>
+        </div>
+    <br><br>
+
+<!--Third-->
+    <div id="viz3"></div>
+    <div id="D01">Dogs vs Cats within States.<br><br>The above data represents the relation between mean number of cats and mean number of dogs within each state.
+        The height of bar is directly proportional to mean of number cats and dogs within the state.
+    </div>
+    <div id="D02">Questions we can ask from above data.
+        <ol>
+            <li>Which pet food I want to keep a higher stock of?.</li>
+            <li>Which pet accessory has a higher probabily to get sold out?</li>
+            <li>Which veterinary store is more likely to work more?</li>
+            <li>What is the personality of most of the people within the state?</li>
+        </ol>
+    </div>
+    <div id="D02">Conclusions I can derive:
+        <ol>
+            <li>I need a higher stock of cat food than dog food in many states.</li>
+            <li>Cat accessories are to be sold out more than dog accessories.</li>
+            <li>Arizona and Kentucky should have almost same amount of supply.</li>
+        </ol>
+    </div>
+    <br><br>
+
+<!--NEW-->
+    <div class="d2">
+        <h1 class="Head3">Lets look at some food and accessories to choose from.</h1>       
+            <img src="D3.jpg" class="imgg">
+            <br><br><br>
+
+<!--now Catalogue-->
+
+        <div class="container">
+            <div id="dimg"><img src="D1.jpg" title="Dog Food" ></div>
+            <div class="d3" >
+                <p>Dog Food DF01.<br><br>Price: $15 each.<br><br>Best before 3 years.<br></p>
+                <input type="number" id="count0" min='0' placeholder="How many you want?">
+                <button id='B01' onclick="KClick(document.getElementById('count0').value, 0)">DF01</button>
+                <br>Price is:<output type="text" id="price0">
+            </div>
+            <div class="links"><a href="https://puppyfinder.com/dogs-for-adoption-usa">Click to find Dog Adoption Center</a></div>
+        </div>
+        <br><br><br>
+          
+            
+        <div class="container">
+            <div id="dimg"><img src="D2.jpg" title="Dog Accessory"></div>
+            <div class="d3" >
+                <p>Dog Accessory DA02.<br><br>Price: $20 each.<br></p>
+                <input type="number" id="count1" min='0' placeholder="How many you want?">
+                <button id='B01' onclick="KClick(document.getElementById('count1').value, 1)">DA02</button>
+                <br>Price is:<output type="text" id="price1">
+            </div>
+            <div class="links"><a href="">Click to find Dog Veterinary Store</a></div>
+        </div>
+        <br><br><br>
+
+
+        <div class="container">
+            <div id="dimg"><img src="c1.jpg" title="Cat Food"></div>
+            <div class="d3" >
+                <p>Cat Food CF01.<br><br>Price: $25 each.<br><br>Best before 2 years.<br></p>
+                <input type="number" id="count2" min='0' placeholder="How many you want?">
+                <button id='B01' onclick="KClick(document.getElementById('count2').value, 2)">CF01</button>
+                <br>Price is:<output type="text" id="price2">
+            </div>
+            <div class="links"><a href="https://providenceac.org/adopt/cats/">Click to find Cat Adoption Center</a></div>
+        </div>
+        <br><br><br>
+
+            
+        <div class="container">
+            <div id="dimg"><img src="c2.jpg" title="Cat Accessory"></div>
+            <div class="d3" >
+                <p>Cat Accessory CA02.<br><br>Price: $30 each.<br></p>
+                <input type="number" id="count3" min='0' placeholder="How many you want?">
+                <button id='B01' onclick="KClick(document.getElementById('count3').value, 3)">CA02</button>
+                <br>Price is:<output type="text" id="price3">
+            </div>
+            <div class="links"> <a href="">Click to find Cat Veterinary Store</a></div>
+        </div>
+        <br><br><br>
+    </div>
+
+<div id="D01">
+        Total cost of all items you selected is: <button id='B01' onclick="KFinal()">Calculate</button>$ <output type="text" id="FinalP">
+</div>
+    <footer id="f">.</footer>
+</body>
+</html>
