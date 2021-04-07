@@ -16,10 +16,14 @@ function initViz3() {
 
     var viz = new tableau.Viz(containerDiv3, url);
 }
+
 window.onload = function(){
     initViz();
     initViz2();
     initViz3();
+    for(var i=0; i<4; i++){
+        document.getElementById('I' + String(i)).innerHTML = TileP[i];
+    }
 }
 
 const TileP = [15, 20, 25, 30];
@@ -33,5 +37,4 @@ function KFinal(){
     var sum1 = TotalP.reduce(function(a,b){return a+b;},0);
     document.getElementById("FinalP").innerHTML=(sum1);
 }
-//for(var i=0; i<4; i++){
-document.getElementById('A'+String(2)).innerHTML = TileP[2];
+
